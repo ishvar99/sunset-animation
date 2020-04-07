@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.sky{
+			position: absolute;
+			top:0;
+			left:0;
+           background-color: skyblue;
+           padding:30% 50%;
+           
+		}
+		.sun{
+			padding: 50px;
+			background-color: orange;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			position: absolute;
+			top:60%;
+			left:0.65%;
+			animation-name: sunset;
+			animation-duration:3s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+			animation-play-state: running;
+
+		}
+		.earth{
+           background-color: green;
+           position: absolute;
+           padding-top: 500px;
+           width: 100%;
+           top:70%;
+           left:0;
+           z-index: 1;
+		}
+		@keyframes sunset{
+			0%{
+				background-color: orange;
+				transform: translate(0,0);
+			}
+			15%{
+                 background-color: rgb(247,164,40);
+                 transform:translate(330px,0);
+			}
+			25%{
+                  background-color: rgb(250,244,59);
+                  transform:translate(860px,-50px);
+			}
+			40%{
+				background-color: rgb(255,255,83);
+				transform:translate(860px,-50px);
+			}
+			50%{
+				  background-color: yellow;
+				  transform:translate(1320px,0);
+			}
+			60%{
+				background-color: rgb(241,152,18);
+				  transform:translate(1990px,600px);
+
+			}
+			75%{
+				background-color: rgb(255,128,0);
+			}
+			100%{
+				background-color: orange;
+			}
+		}
+	</style>
+</head>
+<body>
+<div class="sky">
+</div>
+<div class="sun"></div>
+<div class="earth">
+	
+</div>
+</body>
+</html>
